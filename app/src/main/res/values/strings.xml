@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Assignment 3</string>
+    <string name="android_version">Enter Android Version</string>
+    <string name="androd_name">Enter Android Code Name</string>
+    <string name="add_btn">Add</string>
+    <string name="version">Version</string>
+    <string name="code_name">Code Name</string>
+    <string name="andoroid8">Android 8</string>
+    <string name="oreo">Oreo</string>
+</resources>
