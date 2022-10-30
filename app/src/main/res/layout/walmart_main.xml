@@ -10,6 +10,7 @@
         android:layout_width="230dp"
         android:layout_height="77dp"
         android:layout_marginTop="64dp"
+        android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,74 +29,106 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Email address (required)"
+        android:textColor="#B6B5B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="280dp" />
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Password (required)"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="345dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="386dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email address (required)"
-        android:textColor="#B6B5B5"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="261dp" />
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Forgot password?"
-        tools:layout_editor_absoluteX="188dp"
-        tools:layout_editor_absoluteY="450dp" />
+        android:layout_marginTop="16dp"
+        android:autoLink="all"
+        android:clickable="true"
+        android:text="@string/forgot_password"
+        android:textColorLink="@android:color/holo_orange_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="206dp"
-        android:layout_height="47dp"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#2196F3"
         android:text="Sign in"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="517dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
         android:text="Don't have an account?"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="614dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="237dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
         android:backgroundTint="#FFFFFF"
         android:text="Create new account"
         android:textColor="#3F51B5"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="654dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
