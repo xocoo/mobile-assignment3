@@ -7,5 +7,6 @@
     <string name="code_name">Code Name</string>
     <string name="andoroid8">Android 8</string>
     <string name="oreo">Oreo</string>
+    <string name="walmart">Walmart</string>
     <string name="forgot_password">Forgot password?</string>
 </resources>

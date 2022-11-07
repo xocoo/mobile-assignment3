@@ -1,6 +1,7 @@
 package com.miu.assignment3
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.TableRow
@@ -13,6 +14,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        btn_walmart.setOnClickListener {
+            val walmartIntent = Intent(this, Walmart::class.java)
+            startActivity(walmartIntent)
+        }
     }
 
     @SuppressLint("ResourceAsColor")

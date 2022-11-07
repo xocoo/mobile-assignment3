@@ -68,4 +68,16 @@
         </TextView>
     </TableRow>
 
+    <TableRow android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/btn_walmart"
+            android:layout_width="wrap_content"
+            android:layout_span="2"
+            android:backgroundTint="@color/teal_200"
+            android:text="@string/walmart">
+
+        </Button>
+    </TableRow>
+
 </TableLayout>
